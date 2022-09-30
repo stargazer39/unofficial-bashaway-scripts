@@ -1,0 +1,9 @@
+#!/bin/bash
+# A script by Dehemi Weerakkody ( @stargazer39 ) for bashaway2022
+# Finds a Dockerfile in a folder and builds it
+# All the arguments sent to this script is sent to the docker build command
+# Example that outputs the build hash of the build Dockerfile
+# docker-find-build -q .
+
+FILE_PATH=$(find ${@: -1} -name Dockerfile -print -quit  | xargs -I{} dirname {})
+docker build "${@:1:$#-1}" $FILE_PATH

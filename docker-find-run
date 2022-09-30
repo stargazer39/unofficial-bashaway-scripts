@@ -1,0 +1,10 @@
+#!/bin/bash
+# A script by dehemi weerakkody ( @stargazer39 ) for bashaway2022
+# Finds a Dockerfile in a folder and builds it, and runs it
+# Aguments added to this script is sent to docker run command
+# (last argument is sent to docker-find-build)
+# Depends on docker-find-build script which you can find with this script in the repo
+# Example that finds Dockerfile and runs interactivly -
+# docker-find-run -it .
+ 
+docker run "${@:1:$#-1}" $(docker-find-build -q ${@: -1})
