@@ -1,5 +1,5 @@
 #!/bin/bash
-# A script by dehemi weerakkody ( @stargazer39 ) for bashaway2022
+# A script by Dehemi Weerakkody ( @stargazer39 ) for bashaway2022
 # Finds a Dockerfile in a folder and builds it, and runs it
 # Aguments added to this script is sent to docker run command
 # (last argument is sent to docker-find-build)
