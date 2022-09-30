@@ -1,0 +1,6 @@
+#!/bin/bash
+# Extracts zip to a subdir with zip's name
+
+zipfile="$1"
+zipdir=${1%.zip}
+unzip -d "$zipdir" "$zipfile"

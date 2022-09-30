@@ -5,5 +5,5 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-cp ./docker-* /usr/bin/
-chmod +x /usr/bin/docker-*
+cp ./docker-* unzipd /usr/bin/
+chmod +x /usr/bin/docker-* unzipd
